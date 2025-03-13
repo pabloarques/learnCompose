@@ -2,4 +2,13 @@
 <resources>
 
     <style name="Theme.LearnCompose" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.SplashScreen.LearnCompose" parent="Theme.SplashScreen">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="windowSplashScreenBackground">#32D7ED</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_background</item>
+        <item name="postSplashScreenTheme">@style/Theme.LearnCompose</item>
+    </style>
 </resources>

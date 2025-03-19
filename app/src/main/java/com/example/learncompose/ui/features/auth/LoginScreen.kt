@@ -11,18 +11,16 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.learncompose.ui.theme.LearnComposeTheme
 import com.example.learncompose.ui.util.WindowInfo
-import com.example.learncompose.ui.util.rememberWindowInfo
+import com.example.learncompose.ui.util.windowInfoPreview
 
 @Composable
 fun LoginScreen(
     modifier: Modifier = Modifier,
+    windowInfo: WindowInfo,
     onNavigateToRegister: () -> Unit,
     onLoginSuccess: () -> Unit,
 ) {
-    val windowInfo = rememberWindowInfo()
-
     if (windowInfo.screenWidthInfo is WindowInfo.WindowType.Medium) {
-
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -39,6 +37,7 @@ fun LoginScreen(
 fun LoginScreenPreview() {
     LearnComposeTheme {
         LoginScreen(
+            windowInfo = windowInfoPreview,
             onNavigateToRegister = {},
             onLoginSuccess = {}
         )

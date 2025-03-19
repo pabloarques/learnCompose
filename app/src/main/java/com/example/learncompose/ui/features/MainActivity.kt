@@ -9,6 +9,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.learncompose.ui.navigation.NavigationWrapper
 import com.example.learncompose.ui.theme.LearnComposeTheme
+import com.example.learncompose.ui.util.rememberWindowInfo
+import com.example.learncompose.ui.util.windowInfoPreview
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +21,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             LearnComposeTheme {
                 val isLoggin = false
-                NavigationWrapper(isLoggin)
+                val windowInfo = rememberWindowInfo()
+                NavigationWrapper(isLoggin, windowInfo)
             }
         }
     }
@@ -29,6 +32,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun ActivityPreview() {
     LearnComposeTheme {
-        NavigationWrapper(isLoggin = false)
+        NavigationWrapper(isLoggin = false, windowInfo = windowInfoPreview)
     }
 }

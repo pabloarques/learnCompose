@@ -26,6 +26,12 @@ fun rememberWindowInfo(): WindowInfo {
     )
 }
 
+val windowInfoPreview = WindowInfo(
+    screenWidthInfo = WindowInfo.WindowType.Compact,
+    screenHeightInfo = WindowInfo.WindowType.Compact,
+    screenWidth = 600.dp,
+    screenHeight = 480.dp
+)
 
 data class WindowInfo(
     val screenWidthInfo: WindowType,

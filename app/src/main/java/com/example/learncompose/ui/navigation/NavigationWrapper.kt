@@ -1,10 +1,10 @@
-package com.example.learncompose.features.navigation
+package com.example.learncompose.ui.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
-import com.example.learncompose.features.navigation.graphs.authNavGraph
-import com.example.learncompose.features.navigation.graphs.mainNavGraph
+import com.example.learncompose.ui.navigation.graphs.authNavGraph
+import com.example.learncompose.ui.navigation.graphs.mainNavGraph
 
 @Composable
 fun NavigationWrapper(isLoggin: Boolean) {

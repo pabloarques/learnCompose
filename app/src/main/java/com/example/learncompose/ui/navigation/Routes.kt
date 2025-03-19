@@ -1,4 +1,4 @@
-package com.example.learncompose.features.navigation
+package com.example.learncompose.ui.navigation
 
 enum class GraphRoutes(val route: String) {
     AuthGraph("auth_graph"),

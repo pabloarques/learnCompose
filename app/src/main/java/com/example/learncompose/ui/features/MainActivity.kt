@@ -1,4 +1,4 @@
-package com.example.learncompose.features
+package com.example.learncompose.ui.features
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.example.learncompose.features.navigation.NavigationWrapper
+import com.example.learncompose.ui.navigation.NavigationWrapper
 import com.example.learncompose.ui.theme.LearnComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             LearnComposeTheme {
-                val isLoggin = true
+                val isLoggin = false
                 NavigationWrapper(isLoggin)
             }
         }

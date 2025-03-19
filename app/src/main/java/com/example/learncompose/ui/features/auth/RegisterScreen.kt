@@ -1,4 +1,4 @@
-package com.example.learncompose.features.home
+package com.example.learncompose.ui.features.auth
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -8,6 +8,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 
 @Composable
-fun HomeScreen(modifier: Modifier = Modifier) {
-    Box(modifier = Modifier.fillMaxSize().background(color = Color.Red))
+fun RegisterScreen(
+    modifier: Modifier = Modifier,
+    onRegisterSuccess: () -> Unit,
+) {
+
+    Box(modifier = Modifier
+        .fillMaxSize()
+        .background(color = Color.Blue))
 }

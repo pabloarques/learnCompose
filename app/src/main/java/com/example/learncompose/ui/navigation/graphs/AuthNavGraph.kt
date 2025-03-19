@@ -1,13 +1,13 @@
-package com.example.learncompose.features.navigation.graphs
+package com.example.learncompose.ui.navigation.graphs
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
-import com.example.learncompose.features.auth.LoginScreen
-import com.example.learncompose.features.auth.RegisterScreen
-import com.example.learncompose.features.navigation.AuthRoutes
-import com.example.learncompose.features.navigation.GraphRoutes
+import com.example.learncompose.ui.features.auth.LoginScreen
+import com.example.learncompose.ui.features.auth.RegisterScreen
+import com.example.learncompose.ui.navigation.AuthRoutes
+import com.example.learncompose.ui.navigation.GraphRoutes
 
 fun NavGraphBuilder.authNavGraph(navController: NavHostController) {
     navigation(startDestination = AuthRoutes.Login.route, route = GraphRoutes.AuthGraph.route) {
